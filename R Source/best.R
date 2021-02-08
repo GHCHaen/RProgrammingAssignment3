@@ -52,10 +52,6 @@ best <- function(state, outcome)
     b_StateColumn <- which(colnames(b_Data) == "State")
     b_OutcomeColumn <- which(colnames(b_Data) == b_Outcomes[outcome])
     
-    ## Remove unnecessary columns from data, only interested in hospital name,
-    ## state and values for outcome provided by caller
-    #b_Data <- b_Data[,c(b_HospitalNameColumn, b_StateColumn, b_OutcomeColumn)]
-    
     ## Filter Data to Desired State Only
     b_Data <- b_Data[b_Data$State == state,]
     
