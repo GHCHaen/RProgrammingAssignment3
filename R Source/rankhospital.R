@@ -29,11 +29,11 @@ rankhospital <- function(state, outcome, rank = "best")
     
     ## Valid list of outcomes with corresponding data column name
     b_Outcomes <- list("heart attack" = 
-                           "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack",
+                "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack",
                        "heart failure" =
-                           "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure",
+                "Hospital.30.Day.Death..Mortality..Rates.from.Heart.Failure",
                        "pneumonia" = 
-                           "Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia")
+                "Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia")
     
     ## Check that state, outcome and rank are valid
     if(!state %in% b_Data$State)
