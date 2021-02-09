@@ -1,6 +1,7 @@
 ## This file defines a single method named best. This function uses the data
 ## located in outcome-of-care-measures.csv and returns the name (or names in
-## case of a tie) of the hospital with the best results for a specified outcome.
+## case of a tie) of the hospital with the best results for a specified state
+## and outcome.
 
 ## Arguments:
 ##  state (character, length 2) - The state abbreviation for comparison
